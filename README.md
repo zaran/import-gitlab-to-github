@@ -1,4 +1,4 @@
-# import-gitlab-to-githb
+# import-gitlab-to-github
 Import GitLab repos into GitHub
 
 Need these creds:
@@ -18,4 +18,9 @@ Import GitLab projects into GitHub
 options:
   -h, --help  show this help message and exit
   --dry-run   Show what would be imported without creating anything
+```
+
+Edit: Turns out the endpoint to import repos has been deprecated :( - I got this error:
+```
+[error] importing [REPO-NAME]: {"message":"This endpoint has been deprecated. To import a repository, please use the GitHub Importer tool at https://github.com/new/import.","documentation_url":"https://docs.github.com/rest","status":"404"}
 ```
